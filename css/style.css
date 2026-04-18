@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0 24px;
+  height: 64px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px 6px 4px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+  cursor: pointer;
+  margin-left: -4px;
+}
+
+.logo img {
+  width: 35px;
+  height: 35px;
+}
+
+.logo span {
+  font-size: 26px;
+  color: #5f6368;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}
+
+.links {
+  display: flex;
+  gap: 5px;
+}
+
+.links a {
+  font-size: 16px;
+  color: #5f6368; /* cinza escuro do Google */
+  text-decoration: none;
+  font-family: "Google Sans", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  padding: 12px 16px; /* espaço interno para o fundo aparecer */
+  border-radius: 4px; /* cantos arredondados */
+  transition: background 0.2s ease; /* animação suave */
+}
+
+.arrow {
+  font-size: 15px;
+  color: #5f6368;
+}
+
+.links a:hover {
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.logo:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+/*  resto da pagina abaixo da NavBar */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 48px 24px;
+  max-width: 600px;
+  margin: 0 auto;
+  gap: 16px;
+}
+
+h1 {
+  font-family: "Google Sans", arial, sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #202124;
+  line-height: 1.1;
+  margin: 0;
+  letter-spacing: -1.5px;
+}
+
+.btn-download {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Google Sans', Arial, sans-serif;
+  transition: background 0.2s ease;
+}
+
+.btn-download:hover {
+  background: #1557b0;
+}
+
+.system-info {
+  font-size: 14px;
+  color: #5f6368;
+  margin: 0;
+}
+
+.update-link {
+  font-family: "Google Sans", Arial, sans-serif;
+  font-size: 14px;
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.update-link:hover {
+  text-decoration: none;
+}
+
+.checkbox-area {
+  font-family: "Google Sans", Arial, sans-serif;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  text-align: left;
+  font-size: 13px;
+  color: #3c4043;
+  max-width: 460px;
+  margin-top: 8px;
+}
+
+.checkbox-area input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #1a73e8;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.checkbox-area a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.checkbox-area a:hover {
+  text-decoration: underline;
+}
+
+.terms {
+  font-family: "Google Sans", Arial, sans-serif;
+  font-size: 13px;
+  color: #3c4043;
+  max-width: 420px;
+  line-height: 1.6;
+}
+
+.terms a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: none;
+}
