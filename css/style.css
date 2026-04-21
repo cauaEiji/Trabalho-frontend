@@ -17,7 +17,7 @@ nav {
   height: 64px;
   background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-  font-family: Arial, sans-serif;
+  font-family: "Google Sans", Arial, sans-serif; /* Fonte Padrão */
 }
 
 .logo {
@@ -89,8 +89,8 @@ nav {
 
 h1 {
   font-family: "Google Sans", arial, sans-serif;
-  font-size: 65px;
-  font-weight: 700px;
+  font-size: 60px;
+  font-weight: 700;
   color: #202124;
   line-height: 1.1;
   margin: 0;
@@ -118,6 +118,7 @@ h1 {
 }
 
 .system-info {
+  font-family: "Google Sans", Arial, sans-serif;
   font-size: 14px;
   color: #5f6368;
   margin: 0;
@@ -164,7 +165,7 @@ h1 {
   text-decoration: underline;
 }
 
-.termos {
+.terms {
   font-family: "Google Sans", Arial, sans-serif;
   font-size: 13px;
   color: #3c4043;
@@ -172,11 +173,68 @@ h1 {
   line-height: 1.6;
 }
 
-.termos a {
+.terms a {
   color: #1a73e8;
   text-decoration: none;
 }
 
-.termos a:hover {
+.terms a:hover {
   text-decoration: none;
+}
+
+/* ── QR Code Popup ── */
+
+.chr-home-qr-popup {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 190px;
+  background: #fff;
+  border-radius: 12px 0 0 12px;
+  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.14), -1px 0 6px rgba(0, 0, 0, 0.08);
+  padding: 16px 12px;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chr-home-qr-popup__qr-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.chr-home-qr-popup__qr-wrapper {
+  flex: 1;
+  min-width: 0;
+}
+
+.chr-home-qr-popup__qr-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  background: #000;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chr-home-qr-popup p {
+  font-family: "Google Sans", Arial, sans-serif;
+  font-size: 12px;
+  color: #3c4043;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
 }
