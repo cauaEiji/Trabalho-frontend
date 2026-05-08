@@ -19,7 +19,9 @@ nav {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   font-family: "Google Sans", Arial, sans-serif; /* Fonte Padrão */
 }
-
+.menu{
+  display: none;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -283,9 +285,17 @@ h1 {
     gap: 8px;
   }
 
+
+  .menu{
+    display: block;
+    margin-right: 15px;
+  }
+
+
   .logo img {
     width: 28px;
     height: 28px;
+    
   }
 
   .logo span {
@@ -293,7 +303,7 @@ h1 {
   }
 
   .links {
-    gap: 0;
+    display: none;
   }
 
   .links a {
